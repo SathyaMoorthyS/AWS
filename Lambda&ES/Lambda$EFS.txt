@@ -1,0 +1,59 @@
+Lambda & EFS
+
+
+import boto3
+region = 'us-west-1'
+instances = ['i-0a0346bf0df7aa6a1', 'i-060f4b09a8593dbca','i-0d49d1a597c7e6bb2']
+ec2 = boto3.client('ec2', region_name=region)
+
+def lambda_handler(event, context):
+    ec2.start_instances(InstanceIds=instances)
+    print('started your instances: ' + str(instances))
+
+
+
+import boto3
+region = 'us-west-1'
+instances = ['i-0a0346bf0df7aa6a1', 'i-060f4b09a8593dbca','i-0d49d1a597c7e6bb2']
+ec2 = boto3.client('ec2', region_name=region)
+
+def lambda_handler(event, context):
+    ec2.stop_instances(InstanceIds=instances)
+    print('stopped your instances: ' + str(instances))
+
+
+New EFS
+
+ot@ip-172-31-23-116 new]# history
+    1  ls
+    2  sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-07e83477803317e10.efs.us-west-1.amazonaws.com:/ new
+    3  ls
+    4  cd new/
+    5  ls
+    6  cd ..
+    7  cd new
+    8  ls
+    9  touch new
+   10  ls
+   11  cat old
+   12  cat > old
+   13  cat old
+   14  cat > old
+   15  cat old
+   16  history
+
+Old EFSS
+    1  ls
+    2  sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-07e83477803317e10.efs.us-west-1.amazonaws.com:/ old
+    3  ls
+    4  cd old/
+    5  ls
+    6  cd ..
+    7  cd     1  ls
+    2  sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-07e83477803317e10.efs.us-west-1.amazonaws.com:/ old
+    3  ls
+    4  cd old/
+    5  ls
+    6  cd ..
+    7  cd old
+       cat old

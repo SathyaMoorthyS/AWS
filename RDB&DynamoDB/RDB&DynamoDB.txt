@@ -1,0 +1,37 @@
+database-1.c14mmsagsi50.us-west-1.rds.amazonaws.com
+
+admin12345
+
+yum install mysql
+    2  yum update
+    3  yum install mysql
+    4  mysql --version
+    5  cleaar
+    6  clear
+    7  mysql -h database-2.c14mmsagsi50.us-west-1.rds.amazonaws.com -P 3306 -u admin -p
+
+Replica
+
+database3.c14mmsagsi50.us-west-1.rds.amazonaws.com
+
+mysql -h database3.c14mmsagsi50.us-west-1.rds.amazonaws.com -P 3306 -u admin -p
+
+show database-2
+
+sudo yum install mysql-common
+
+show databases;
+
+
+describe Person;
+
+
+create table Person (id int,name varchar(255),email varchar(255));
+
+insert into Person (id,name,email) values("1","Sathya","sathya.sabagaja@gmal.com");
+insert into Person (id,name,email) values("1","Samantha","samantha@gmal.com");
+insert into Person (id,name,email) values("1","Saba","saba@gmal.com");
+describe Person
+
+
+select * from Person

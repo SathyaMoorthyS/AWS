@@ -1,0 +1,20 @@
+AWS
+Internet Based Services
+
+6 types of eng
+server
+storage
+security
+network
+database
+application
+
+
+Winows Protocal 3389
+Linu Protocal 22
+
+34.233.119.71
+
+Administrator
+
+

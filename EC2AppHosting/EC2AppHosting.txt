@@ -1,0 +1,9 @@
+HTTP 80
+
+HTTPS 443
+
+
+    1  whoami
+    2  chmod 777 /vaar/ww/html/
+    3  chmod 777 /var/www/html/
+    4  history

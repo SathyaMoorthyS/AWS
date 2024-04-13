@@ -1,0 +1,61 @@
+Deplyment Server
+
+ 1  yum install update
+    2  yum update
+    3  yum install ruby -y
+    4  yum install wget -y
+    5  wget https://aws-codedeploy-us-west-1.s3.amazonaws.com/latest/install
+    6  wget https://aws-codedeploy-us-west-1.s3.amazonaws.com/latest/install
+    7  ls
+    8  chmod +x install
+    9  ./install auto
+   10  service codedeploy-agent status
+
+
+
+wget https://aws-codedeploy-us-west-1.s3.amazonaws.com/latest/install
+
+wget https://aws-codedeploy-us-west-1.s3.amazonaws.com/latest/install
+
+aws deploy push --application-name sampleapp --s3-location s3://cdcps3bucket2024/sampleapp.zip
+
+developer server
+
+1  cd deployment/
+    2  cd sampleapp/
+    3  cd scripts/
+    4  cd ..
+    5  vi appspec.yml
+    6  ls
+    7  ls
+    8  vi appspec.yml
+    9  ls
+   10  cd scripts/
+   11  ls
+   12  cd ..
+   13  rm -rf '!'
+   14  ls
+   15  rm -rf scripts
+   16  ls
+   17  vi appspec.yml
+   18  ls
+   19  history
+   20  mkdir scripts
+   21  cd scripts/
+   22  vi httpd_install.sh
+   23  ls
+   24  vi httpd_start.sh
+   25  vi httpd_stop.sh
+   26  ls
+   27  history
+
+
+aws deploy create-application --application-name sampleapp24
+
+aws deploy push --application-name sampleapp24 --s3-location s3://cdcps3bucket2024/sampleapp.zip
+
+
+zip -r ../sampleapp.zip .
+cd..
+aws s3 cp sampleapp.zip s3://cdcps3bucket2024
+

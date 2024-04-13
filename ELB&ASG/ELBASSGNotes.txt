@@ -1,0 +1,28 @@
+#! /bin/bash
+yum install httpd -y
+service httpd start
+echo "This is my Classic Load Balancer" > /var/www/html/index.html
+
+
+
+
+Application Load Balacer
+
+path based routing
+target group+ path
+
+
+#! /bin/bash
+yum install httpd -y
+service httpd start
+mkdir /var/www/html/facebook
+echo "This is my Network Facebook Applicaton" > /var/www/html/facebook/index.html
+
+
+
+#! /bin/bash
+yum install httpd -y
+service httpd start
+mkdir /var/www/html/instagram
+echo "This is my Network  Instagram Applicaton" > /var/www/html/instagram/index.html
+

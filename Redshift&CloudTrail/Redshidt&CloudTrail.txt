@@ -1,0 +1,16 @@
+dev
+awsuser
+
+Admn12345
+Admn12345
+
+
+create table Person (id int,name varchar(255),email varchar(255));
+
+s3://datasample/sample.txt
+
+copy person from 's3://datasample/sample.txt' credentials 'aws_iam_role=arn:aws:iam::299143546715:role/RedshftS3Role' delimiter '|' region 'us-east-1' maxerror 10;
+
+Cloud Trail
+
+aws-cloudtrail-logs-299143546715-bb84b26e

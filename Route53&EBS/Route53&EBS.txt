@@ -1,0 +1,58 @@
+Route53 - Network Engine
+
+
+#! /bin/bash
+yum install httpd -y
+service httpd start
+echo "This is my Route53 Simple Scaling" > /var/www/html/index.html	
+
+
+#! /bin/bash
+yum install httpd -y
+service httpd start
+echo "This is my Route53 India" > /var/www/html/index.html
+
+
+
+#! /bin/bash
+yum install httpd -y
+service httpd start
+echo "This is my Route53 Europe" > /var/www/html/index.html
+
+
+#! /bin/bash
+yum install httpd -y
+service httpd start
+echo "This is my Route53 Africa" > /var/www/html/index.html
+
+
+#! /bin/bash
+yum install httpd -y
+service httpd start
+echo "This is my Route53 Primary" > /var/www/html/index.html
+
+
+#! /bin/bash
+yum install httpd -y
+service httpd start
+echo "This is my Route53 Secondary" > /var/www/html/index.html
+
+
+
+
+sathyamoorthysms.in
+
+ns-638.awsdns-15.net
+ns-1074.awsdns-06.org
+ns-1698.awsdns-20.co.uk
+ns-33.awsdns-04.com
+
+
+
+
+
+
+
+https://sathya8.godaddysites.com/
+
+
